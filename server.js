@@ -9,7 +9,7 @@ const port = 3000;
 const app = express();
 
 // Connect to DB
-
+require("./config/database");
 
 // Configure the app with app.set()
 app.set('view engine', 'ejs');
