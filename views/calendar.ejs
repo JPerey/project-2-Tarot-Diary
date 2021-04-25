@@ -1,10 +1,11 @@
 <%- include("./partials/header") %>
 
 <h1>Tarot Diary Calendar</h1>
-<p><% let date = new Date().getMonth() %></p>
 
-<!-- Button to open modal -->
-
+<h2><%= month %></h2>
+<% for(let i = 1; i <= days; i++){ %>
+<a href="#"><%- i %></a>
+<% }; %>
 
 
 <%- include("./partials/footer") %>

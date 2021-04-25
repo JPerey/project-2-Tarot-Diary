@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const connectionString = "mongodb+srv://admin:abc1234@cluster0.cohe2.mongodb.net/tarot-reading-collection?retryWrites=true&w=majority";
 
 mongoose.connect( connectionString, {
-    useNewUrlPArser: true,
+    useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false,
     useUnifiedTopology: true,

@@ -3,6 +3,7 @@ const express = require('express');
 const morgan = require('morgan');
 const indexRouter = require("./routes/index");
 const calendarRouter = require("./routes/calendar");
+const tarotRouter = require("./routes/tarot");
 const port = 3000; 
 
 // Set up express app
@@ -23,6 +24,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use("/", indexRouter);
 app.use("/", calendarRouter);
+app.use("/", tarotRouter);
 
 // Tell App to listen
 app.listen(port, function() {
