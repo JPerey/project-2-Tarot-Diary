@@ -1,5 +1,6 @@
 module.exports = {
     index,
+    show,
 };
 
 function index(req, res) {
@@ -21,3 +22,7 @@ function index(req, res) {
         days: days,
     });
 };
+
+function show(req,res){
+    req.redirect("")
+}
