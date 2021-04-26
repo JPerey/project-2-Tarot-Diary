@@ -1,23 +1,29 @@
 module.exports={
-    index1,
-    index3,
-    index4,
+    new1,
+    new3,
+    new4,
+    create,
 };
 
-function index1(req, res){
-res.render("tarot1", {
+function new1(req, res){
+res.render("./tarot/new1", {
     title: "Single Card Reading",
 });
 };
 
-function index3(req, res){
-res.render("tarot3", {
+function new3(req, res){
+res.render("./tarot/new3", {
     title: "Three Card Reading",
 });
 };
 
-function index4(req,res){
-res.render("tarot4", {
+function new4(req,res){
+res.render("./tarot/new4", {
     title: "Four Card reading",
 });
 };
+
+function create(req,res){
+    console.log(req.body);
+    //
+}

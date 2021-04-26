@@ -23,8 +23,8 @@ app.use(express.urlencoded({ extended: false }));
 // Mount routes with app.use()
 
 app.use("/", indexRouter);
-app.use("/", calendarRouter);
-app.use("/", tarotRouter);
+app.use("/calender", calendarRouter);
+app.use("/tarot", tarotRouter);
 
 // Tell App to listen
 app.listen(port, function() {
