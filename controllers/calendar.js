@@ -4,17 +4,20 @@ module.exports = {
 };
 
 function index(req, res) {
-    //let days = [];
+    let days;
     const dateObj = new Date();
     console.log("HELLO THERE 1")
     const monthName = dateObj.toLocaleString("default", {
         month: "long"
     });
 
-    // function month() {
-
-    // }
-    let days = 31;
+    if(monthName == "january" || "march" || "may" || "july" || "august" || "october" || "december"){
+        days = 31;
+    } else if(monthName == "april" || "june" || "september" || "november"){
+        days = 30;
+    } else {
+        days = 28;
+    };
 
     res.render("calendar", {
         title: "Calendar",
