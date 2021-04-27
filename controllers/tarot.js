@@ -1,3 +1,4 @@
+const Reading = require("../models/reading");
 module.exports={
     new1,
     new3,
@@ -25,5 +26,7 @@ res.render("./tarot/new4", {
 
 function create(req,res){
     console.log(req.body);
-    //
-}
+    Reading.create(req.body, function(err, reading){
+        res.redirect("./diary");
+    })
+};

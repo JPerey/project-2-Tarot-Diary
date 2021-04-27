@@ -3,13 +3,18 @@ const Schema = mongoose.Schema;
 
 const diarySchema = new Schema({
     content: String,
-}, {timestamps: true});
+    date: Date,
+}, {
+    timestamps: true
+});
 
 const readingSchema = new Schema({
     question: String,
-    cards: Number,
-    cardChoice: [number],
+    card: Number,
+    cardChoice: [Number],
     diaryEntry: diarySchema,
-}, {timestamps: true});
+}, {
+    timestamps: true
+});
 
 module.exports = mongoose.model("Reading", readingSchema);

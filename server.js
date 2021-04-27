@@ -2,7 +2,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const indexRouter = require("./routes/index");
-const calendarRouter = require("./routes/calendar");
+const diaryRouter = require("./routes/diary");
 const tarotRouter = require("./routes/tarot");
 const port = 3000; 
 
@@ -23,7 +23,7 @@ app.use(express.urlencoded({ extended: false }));
 // Mount routes with app.use()
 
 app.use("/", indexRouter);
-app.use("/", calendarRouter);
+app.use("/", diaryRouter);
 app.use("/tarot", tarotRouter);
 
 // Tell App to listen

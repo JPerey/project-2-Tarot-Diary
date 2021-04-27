@@ -1,0 +1,22 @@
+<%- include("./partials/header") %>
+<h1>Tarot Diary Entries</h1>
+<table id="list">
+    <thead>
+      <tr>
+        <th>Date Entry</th>
+        <th>Card Reading Type</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% readings.forEach(function(reading) { %>
+        <tr>
+          <td><%= reading.createdAt %></td>
+          <td><%= reading.card %></td>
+          <td><a href="/diary/<%= readings._id %>">DETAILS</a></td>
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
+
+<%- include("./partials/footer") %>
