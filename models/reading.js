@@ -10,8 +10,7 @@ const diarySchema = new Schema({
 
 const readingSchema = new Schema({
     question: String,
-    card: Number,
-    cardChoice: [Number],
+    cardChoice: [String],
     diaryEntry: diarySchema,
 }, {
     timestamps: true

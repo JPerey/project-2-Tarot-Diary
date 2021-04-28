@@ -1,0 +1,12 @@
+<%- include('../partials/header') %>
+<h1>Question</h1>
+<h2><%=reading.question %></h2>
+
+<% reading.cardChoice.forEach(function(card) { %>
+<h4><%= card %></h4>
+
+<% }); %>
+
+<p>Diary Entry #test</p>
+
+<%- include('../partials/footer') %>

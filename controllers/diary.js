@@ -2,6 +2,7 @@ const Reading = require("../models/reading");
 
 module.exports = {
     index,
+    show,
 };
 
 // function index(req, res) {
@@ -18,3 +19,9 @@ function index(req, res) {
         });
     });
 }
+
+function show(req, res) {
+    Reading.findById(req.params.id, function(err, reading) {
+      res.render('./tarot/show', { title: 'Reading details', reading });
+    });
+  }

@@ -11,9 +11,9 @@
     <tbody>
       <% readings.forEach(function(reading) { %>
         <tr>
-          <td><%= reading.createdAt %></td>
+          <td><%= reading.createdAt.toLocaleString() %></td>
           <td><%= reading.card %></td>
-          <td><a href="/diary/<%= readings._id %>">DETAILS</a></td>
+          <td><a href="/diary/<%=reading._id%>">DETAILS</a></td>
         </tr>
         <% }); %>
       </tbody>
