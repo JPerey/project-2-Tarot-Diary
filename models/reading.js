@@ -3,7 +3,6 @@ const Schema = mongoose.Schema;
 
 const diarySchema = new Schema({
     content: String,
-    date: Date,
 }, {
     timestamps: true
 });
@@ -11,7 +10,7 @@ const diarySchema = new Schema({
 const readingSchema = new Schema({
     question: String,
     cardChoice: [String],
-    diaryEntry: diarySchema,
+    diaryEntry: [diarySchema],
 }, {
     timestamps: true
 });
