@@ -3,7 +3,7 @@ const Reading = require("../models/reading");
 module.exports = {
     index,
     show,
-    new: deleteTarot,
+    delete: deleteTarot,
 };
 
 // function index(req, res) {
@@ -27,9 +27,18 @@ function show(req, res) {
     });
   }
 
+  // function deleteTarot(req, res) {
+  //   Reading.findById(req.params.id, function(err, reading) {
+  //       Reading.remove();
+  //     res.render('diary', { title: 'Tarot Diary', readings });
+  //   });
+  // }
+
   function deleteTarot(req, res) {
-    Reading.findById(req.params.id, function(err, reading) {
-        Reading.remove();
-      res.render('diary', { title: 'Tarot Diary', readings });
+    Reading.findOne({ 'diaryEntry._id': req.params.id }, function(err, reading) {
+      reading.pull(req.params.id);
+      reading.save(function() {
+        res.redirect(`diary`, { title: 'Tarot Diary', readings });
+      });
     });
   }
