@@ -1,6 +1,7 @@
 // Require modules
 const express = require('express');
 const morgan = require('morgan');
+const methodOverride = require("method-override");
 const indexRouter = require("./routes/index");
 const diaryRouter = require("./routes/diary");
 const tarotRouter = require("./routes/tarot");
@@ -22,6 +23,7 @@ app.use(express.static('public'));
 app.use(express.urlencoded({
     extended: false
 }));
+app.use(methodOverride("_method"));
 
 // Mount routes with app.use()
 

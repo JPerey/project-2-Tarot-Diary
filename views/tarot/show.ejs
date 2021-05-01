@@ -34,7 +34,7 @@
 <% } else { %>
 <h5>No Entries Yet</h5>
 <% } %>
-<form id="Tarot-delete-form" method="DELETE" action="/tarot/<%= reading._id %>/">
-    <input type="submit" value="Delete Tarot Entry">
+<form action="/diary/<%= reading._id %>?_method=DELETE" class="delete-form" method="POST">
+    <button type="submit">🗑</button>
 </form>
 <%- include('../partials/footer') %>
