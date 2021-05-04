@@ -6,7 +6,7 @@ const indexRouter = require("./routes/index");
 const diaryRouter = require("./routes/diary");
 const tarotRouter = require("./routes/tarot");
 const entryRouter = require("./routes/entry");
-const port = 3000;
+const port = process.env.PORT || '3000';
 
 // Set up express app
 const app = express();
