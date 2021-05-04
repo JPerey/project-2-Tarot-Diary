@@ -1,11 +1,14 @@
 <%- include("../partials/header") %>
+<div class="card-body">
 <h1>What is something you would want insight on?</h1>
 
-<form action="/tarot" method="POST" autocomplete="off">
-    <textarea id="reading1" name="question" required=true rows="6" cols="40"> Write question here. . .</textarea>
+<form class="tarot-submit" action="/tarot" method="POST" autocomplete="off">
+    <textarea id="reading1" name="question" required=true rows="6" cols="40"></textarea>
     <p>Select your one card below</p>
     <label for="cardChoice">First Card</label>
     <select name="cardChoice">
+
+        <!-- Wands -->
 
         <option name="cardChoice" value="Ace of Wands - An Extremely high energy card, the ace of wands indicates new growth is all around you. Your ideas and outlook will expand, and creativity seems
         endless. This fertile time can also have literal meanings. . . A pregnancy or birth may be on the horizon. Though it's thirlling to embark on your new journey, your good judgement is needed more
@@ -19,7 +22,7 @@
         formed a sense of self, of your values and morals. But now it's time to rely on yourself for guidance. Clarify your goals, and cast other's needs and opinions aside. The future is infinite, and
         it is yours. No one else can see through its layers of light and shadow.">Card</option>
 
-        <option name="cardChoice" value="Four of Wands - You've dont it! The four of wands is a card of completion. Your labors have been steady and strong, and the harvest will be plentiful. In other
+        <option name="cardChoice" value="Four of Wands - You've done it! The four of wands is a card of completion. Your labors have been steady and strong, and the harvest will be plentiful. In other
          words, it's time to party. There might be an upcoming event to mark this occasion. . . a graduation, wedding, or celebration of some kind. So enjoy yourself and those you love. This is an 
          exciting and prosperous time.">Card</option>
 
@@ -52,18 +55,119 @@
         as she's busy with her career. She can be stubborn and much stronger than she looks. As with all the wands family, the Daughter makes a dangerous enemy. This card can also represent a woman
         going through a transformation or spiritual breakthrough.">Card</option>
 
-        <option name="cardChoice" value="Son of Wands - The sond of wands is a true charmer. He's handsome and adventurous and seems to say all the right things. Some call him the 'white knight' of the 
-        tarot. But at some point you may find he becomes hard to know. Trust your instinct with this one - perfection is an illusion.">Card</option>
+        <option name="cardChoice"
+            value="Son of Wands - The sond of wands is a true charmer. He's handsome and adventurous and seems to say all the right things. Some call him the 'white knight' of the 
+        tarot. But at some point you may find he becomes hard to know. Trust your instinct with this one - perfection is an illusion.">Card
+        </option>
 
         <option name="cardChoice" value="Mother of Wands - The mother of wands is a vibrant woman and happy mother. Family comes first in her world - she's very protective of it and is the dominant parent 
         within the home. Though proud and determined, she has enough grace and beauty that you'd hardly notice her forceful nature. Oftentimes she has overcome great pain or trauma in her life. I'ts important
          not to get on her bad side.">Card</option>
 
-         <option name="cardChoice" value="Father of Wands - The father of wands is a man of mystique and charisma. Others are drawn to him naturally, and he welcomes them with an open and loving heart. usually you'll 
-         find him involved in the healing arts, as he's deeply compassionateand in tune with life and nature. He is able to hold steady and still during conflift.">Card</option>
+        <option name="cardChoice"
+            value="Father of Wands - The father of wands is a man of mystique and charisma. Others are drawn to him naturally, and he welcomes them with an open and loving heart. usually you'll 
+         find him involved in the healing arts, as he's deeply compassionateand in tune with life and nature. He is able to hold steady and still during conflift.">
+            Card</option>
+
+        <!-- Cups -->
+        <option name="cardChoice" value="Ace of Cups - Aces mark the beginning of exciting new phases. since the suit of cups deals specifically with love and emotion, you're in for a real treat.
+         Expect to enter a blissful time of health, joy, and friendship. A new love could be on the horizon. You may feel that you're making a whole new start. . . Just go with it and allow this feeling to revilalize
+         your spirit.">Card</option>
+
+        <option name="cardChoice"
+            value="Two of Cups - Say hello to the much adored two of cups. When this card appears, you can anticipate new love to be heading your way. And yes, this usually means romance. . . 
+         but sometimes it points to the birth of a dear and lasting friendship. Either way, the connection between you will be pure, honest, and solid. Open your heart and get ready.">
+            Card</option>
+
+        <option name="cardChoice"
+            value="Three of Cups - The three of cups is a lovely card. It foresees you in the company of amazing friends, creating memories together that you'll forever hold dear. These are not
+         any ol' friends; they are people with whom you feel a rare connection. With them you feel truly 'yourself'. Enjoy each minute of their company. This card can also indicate an upcoming celebration. Love abounds!">
+            Card</option>
+
+        <option name="cardChoice" value="Four of Cups - An outsider would look upon your life and see supportive relationships, pleasures, and even a bit of luxury. But you don't see it that way. Instead,
+            there's discontentment, apathy, and even greed for more. The four of cups warns not to take your situation for granted, or the people who supported you along the way. Look around you. What are you
+            truly longing for? Name it.">Card</option>
+
+        <option name="cardChoice" value="Five of Cups - The five of cups indicates a time of sorrow. A relationship may fall apart or an old friend could slip away. There will be dissapointment and 
+            even regret. When this card appears, it's important not to make any hasty decisions. It may also be helpful to look at the type of expectations you place on others. Perhaps they can
+            never do enough to please you.">Card</option>
+
+        <option name="cardChoice" value="Six of Cups - A card of beautiful implications, the six of cups focuses on the magic and innocence of childhood. The roots of years past are alight with
+            color and vibrancy. . . Look back upon them, get lost in your memories. Old friends may surface and seek you out. All reunions will be joyful. Enjoy simple pleasures and wonder in all
+            areas of your life.">Card</option>
+
+        <option name="cardChoice"
+            value="Seven of Cups - The seven of cups is not the most welcome card. It indicates you'll face temptation in many aspects of your life. Whether it's cheating
+             for pleasure or for money, you'll soon realize you've been building a house of cards. You may feel as though you can't see clearly, can't judge right from wrong or up from down. This is the
+             spell of the seven of cups. It's best to remove yourself for a while, step back until you can see straight again.">Card</option>
+
+        <option name="cardChoice" value="Eight of Cups - The eight of cups sends an urgent message to pack your bags and move on. There is no hope rekindling what's been lost. You must start anew.
+             This card also points to phases of illness and physical stagnation. The message could not be more clear: nothing good remains for you here. Lift your eyes to the horizon, and let your fertile
+             lead you forward.">Card</option>
+
+        <option name="cardChoice"
+            value="Nine of Cups - At last, the card of wishes come true. When the nine of cups appears, worries and fears will be cast away. A new phase of peace and harmony awaits.
+             The world seems to be granting your every wish. Good health, happiness, and even material gains are heading your way. Enjoy.">
+            Card</option>
+
+        <option name="cardChoice"
+            value="Ten of Cups - The ten of cups overflows with positivity. Your goals are being realized, and the excitement surrounding you is magnetic to others. You may
+             feel as though light or color radiates outward from you - almost as if you're shining. Experience sensations like this with an open and joyful heart. Do not doubt this power.">
+            Card</option>
+
+        <!-- Swords -->
+
+        <option name="cardChoice"
+            value="Ace of Swords - When lightning strikes, the whole world seems to light up for just one second. It's as though you can 'see everything', and this vision lingers
+        on even through the storm. Such is the power of the ace of swords. Your mind will become clear, your thoughts precise. It's a great time to make those decisions you've been putting off.">
+            Card</option>
+
+        <option name="cardChoice"
+            value="Two of Swords - The two of swords depicts two opposing forces that have reached a stalemate. You cannot progress forward with either a relationship or a 
+        life decision. There's an answer that's being blocked - maybe by choice? Many times this card will indicate you do not wish to face the truth the light will reveal.">
+            Card</option>
+
+        <option name="cardChoice"
+            value="Three of Swords - A dark and complex card, the three of swords is rarely a welcome sight. It's wrath may come in the form of lies, betrayal, cheating, or 
+        heartbreak. There will be emotional entaglement and confusion. Do not try to make any decisions while in this state. Wait for your heart and spirit to mend.">
+            Card</option>
+
+        <option name="cardChoice" value="Four of Swords - Though threatening swords loom above, the lamb sits in stillness without fear. The four of swords says it's time to look inward and find
+        the mental power to cope with the pressures. It's important to rest. Seek meditation or find literature that focuses on ways to quiet the mind. Take this time to recuperate and move inward
+        before those swords strike.">Card</option>
+
+        <option name="cardChoice" value="Five of swords - Yet another card of warning, the five of swords depicts the destruction of the self. You'll be lured into another situation or argument you know
+        to avoid. Your selfishness and desire for power will lead you to defeat. Pain and discord will result.">Card
+        </option>
+
+        <option name="cardChoice"
+            value="Six of Swords - The six of swords is a card indicating a recovery from difficult times. Hope is on the horizon; things will get better. It's important to rest,
+        revilalize, and surround yourself with jooyful friends. Plan a trip, short or long. Even getting out of town for the weekend will further lift your spirits.">
+            Card</option>
+
+        <option name="cardChoice"
+            value="Seven of Swords - Six swords hang in plain view, while the seventh is tucked under the sly fox's tail. So goes the story of the seven of swords. . .
+            A secret is being kept. You're either the keeper or the kept-from, and it's time to identify which. deceit and avoidance linger in the air. Face the cause of secrecy or risk ostracizing yourself.">
+            Card</option>
+
+        <option name="cardChoice"
+            value="Eight of Swords - Surrounded by obstacles and threats on all sides, you find yourself the victim. You see no way out, no available choices. Your perceptions keep
+             you from opening your wings and taking flight. What keeps you suspended here? Yourself or others? The eight of swords demands an answer. You cannot hang here much longer.">
+            Card</option>
+
+        <option name="cardChoice"
+            value="Nine of Swords - An extremely dark card, the nine of swords reveals the deepest shadows of the self. It indicates insomnia, nightmares, and worries in the midnight hour.
+              Often these states are accompanied by guilt, despair, or even depression. You'll be battling with yourself, so turn to others for help. Find joy, Reach out.">
+            Card</option>
+
+        <option name="cardChoice"
+            value="Ten of Swords - When the ten of swords appears, you've finally hit rock bottom. You've let others walk all over while you play the victim.  Is it possible 
+              that you love the backstabbing and drama too much to move forward without it? If not for drama. . . What would you focus on? It's time to find out.">
+            Card</option>
+
     </select>
 
     <button type="submit" id="card 1">Save/Get Tarot Reading</button>
 </form>
-
+</div>
 <%- include("../partials/footer") %>
