@@ -21,6 +21,9 @@ The beginnings of the card info page, tarot selection page, and a tarot calendar
 version 1.0 index page
 ![wireframe](./images/complete1.png)
 
+ERD
+![wireframe](./images/ERD.png)
+
 ## Future Enhancements
 
 - randomizing tarot cards
