@@ -24,6 +24,10 @@ version 1.0 index page
 ERD
 ![wireframe](./images/ERD.png)
 
+# Get Started
+
+[Click Here To Get Started](https://project-2-tarot-diary.herokuapp.com/)
+
 ## Future Enhancements
 
 - randomizing tarot cards
