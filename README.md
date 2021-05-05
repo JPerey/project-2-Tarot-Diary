@@ -1,4 +1,4 @@
-#Tarot Diary
+## Tarot Diary
 
 A web app that allows a user to get several tarot readings for themselves. Th user can then revisit the reading at the end of the day to chronicle how the reading helped/ changed their view on their day.
 
