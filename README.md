@@ -13,13 +13,13 @@ A web app that allows a user to get several tarot readings for themselves. Th us
 ## wireframes/ Screenshots
 
 This was the first concept index page
-![wireframe](./images/wireframe1.png)
+![wireframe](./images/Wireframe1.png)
 
 The beginnings of the card info page, tarot selection page, and a tarot calendar diary.
-![wireframe](./images/wireframe2.png)
+![wireframe](./images/Wireframe2.png)
 
 version 1.0 index page
-![wireframe](./images/complete1.png)
+![wireframe](./images/Complete1.png)
 
 ERD
 ![wireframe](./images/ERD.png)
